@@ -1,8 +1,10 @@
 import React from 'react'
-
+import AppRoutes from './utils/AppRoutes'
+import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 function App() {
+  const router = createBrowserRouter(AppRoutes)
   return <>
-  <h2>Harish Raajaa R V</h2>
+  <RouterProvider router={router}/>
   </>
 }
 
