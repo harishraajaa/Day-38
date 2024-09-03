@@ -1,4 +1,5 @@
 import React from 'react'
+import TopBar from '../common/Topbar'
 
 function View() {
   return <>
