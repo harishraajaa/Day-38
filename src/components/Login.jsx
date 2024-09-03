@@ -22,7 +22,6 @@ function Login() {
       let response = await api.post(ApiRoutes.LOGIN.path,data,{
         authenticate:ApiRoutes.LOGIN.authenticate
       })
-      console.log(response)
 
       toast.success(response.message)
 
