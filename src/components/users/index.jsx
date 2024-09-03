@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import TopBar from '../common/TopBar'
 import Table from 'react-bootstrap/Table';
-import useLogout from '../../hooks/useLogout';
+import useLogout from '../../hooks/UseLogout'
 import api from '../../service/apiService';
 import ApiRoutes from '../../utils/ApiRoutes';
 
