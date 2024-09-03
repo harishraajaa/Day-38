@@ -1,9 +1,11 @@
 import React from 'react'
+import TopBar from '../common/Topbar'
 
 function Create() {
-  return (
-    <div>Create</div>
-  )
+  return <>
+  <TopBar/>
+  <div>Create</div>
+  </>
 }
 
 export default Create

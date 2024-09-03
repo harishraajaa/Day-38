@@ -1,9 +1,10 @@
 import React from 'react'
 
 function View() {
-  return (
-    <div>View</div>
-  )
+  return <>
+  <TopBar/>
+  <div>View</div>
+  </>
 }
 
 export default View

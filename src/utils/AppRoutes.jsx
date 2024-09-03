@@ -5,6 +5,8 @@ import Recipes from '../components/recipes'
 import Users from "../components/users"
 import Create from '../components/recipes/Create'
 import View from "../components/recipes/View"
+import AdminGuard from "./AdminGuard"
+import ProtectedRoute from "./ProtectedRoute"
 
 
 const AppRoutes = [
@@ -18,19 +20,19 @@ const AppRoutes = [
     },
     {
         path:'/recipes',
-        element:<Recipes/>
+        element:<ProtectedRoute><Recipes/></ProtectedRoute>
     },
     {
         path:'/recipes/create',
-        element:<Create/>
+        element:<ProtectedRoute><Create/></ProtectedRoute>
     },
     {
         path:'/recipes/:id',
-        element:<View/>
+        element:<ProtectedRoute><View/></ProtectedRoute>
     },
     {
         path:'/users',
-        element:<Users/>
+        element:<ProtectedRoute><AdminGuard><Users/></AdminGuard></ProtectedRoute>
     },
     {
         path:'*',
