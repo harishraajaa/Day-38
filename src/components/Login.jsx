@@ -18,7 +18,6 @@ function Login() {
       for (let [key, value] of formData.entries())
         data[key] = value
 
-      console.log(data)
       let response = await api.post(ApiRoutes.LOGIN.path,data,{
         authenticate:ApiRoutes.LOGIN.authenticate
       })
