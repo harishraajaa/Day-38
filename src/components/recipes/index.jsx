@@ -3,7 +3,7 @@ import TopBar from '../common/TopBar'
 import api from '../../service/apiService'
 import ApiRoutes from '../../utils/ApiRoutes'
 import Feed from '../common/Feed'
-import useLogout from '../../hooks/useLogout'
+import useLogout from '../../hooks/UseLogout'
 import { Button } from 'react-bootstrap'
 
 function Recipes() {
