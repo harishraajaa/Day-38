@@ -30,7 +30,7 @@ function TopBar() {
 
   return <div>
     <Navbar expand="lg" className="bg-body-tertiary">
-        <Navbar.Brand className='p-10'><Link to='/recipes' className='non-link'>SayFood</Link></Navbar.Brand>
+        <Navbar.Brand className='p-10'><Link to='/recipes' className='non-link'>Harish Foods</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

@@ -28,7 +28,7 @@ function SignUp() {
 
   return (
     <div className='login-wrapper'>
-      <h3 className='text-align-center'>Welcome to the world of recipes!</h3>
+      <h3 className='text-align-center'>Welcome to the world of Harish Foods!</h3>
       <p className='text-align-center'>Already an user? Login <Link to='/login'>Here</Link></p>
       <Form onSubmit={handleSignUp}>
       
