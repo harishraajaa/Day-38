@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import TopBar from '../common/Topbar'
+import TopBar from '../common/TopBar'
 import api from '../../service/apiService'
 import ApiRoutes from '../../utils/ApiRoutes'
 import Feed from '../common/Feed'

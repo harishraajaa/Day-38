@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import TopBar from '../common/Topbar'
+import TopBar from '../common/TopBar'
 import Table from 'react-bootstrap/Table';
 import useLogout from '../../hooks/useLogout';
 import api from '../../service/apiService';
