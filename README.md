@@ -12,5 +12,5 @@ This application allows the user to perform the below functionalities,
 
 1. Signup (User Creation)
 2. Login (User Login)
-3. Password Reset (Forgot password option)
+3. Password Reset (Forgot password option) - Email will be triggered to the user with Reset link.
 4. Logout from the application. 
