@@ -22,7 +22,7 @@ function PasswordReset() {
 
       console.log(data)
       let response = await api.put(ApiRoutes.PASSWORD_RESET.path+`/${path}`,data,{
-        authenticate:ApiRoutes.LOGIN.authenticate
+        authenticate:ApiRoutes.PASSWORD_RESET.authenticate
       })
 
       toast.success(response.message)
