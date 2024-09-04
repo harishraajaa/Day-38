@@ -7,6 +7,8 @@ import Create from '../components/recipes/Create'
 import View from "../components/recipes/View"
 import AdminGuard from "./AdminGuard"
 import ProtectedRoute from "./ProtectedRoute"
+import Forgetpass from '../components/Forgetpass'
+import PasswordReset from "../components/PasswordReset"
 
 
 const AppRoutes = [
@@ -17,6 +19,14 @@ const AppRoutes = [
     {
         path:'/signup',
         element:<SignUp/>
+    },
+    {
+        path:'/forgetpassword',
+        element:<Forgetpass/>
+    },
+    {
+        path:'/resetpassword/:id',
+        element:<PasswordReset/>
     },
     {
         path:'/recipes',

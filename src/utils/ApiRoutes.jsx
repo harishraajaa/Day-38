@@ -14,6 +14,14 @@ const ApiRoutes = {
     GET_ALL_USERS:{
         path:'/users/getAllUsers',
         authenticate:true
+    },
+    GET_RESET_LINK:{
+        path:'/users/forgetPassword',
+        authenticate:false
+    },
+    PASSWORD_RESET:{
+        path:'/users/resetpassword',
+        authenticate:false
     }
 }
 
