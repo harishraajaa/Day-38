@@ -1,6 +1,5 @@
 import axios from "axios";
 import config from '../utils/config'
-import toast from "react-hot-toast";
 const api = axios.create({
     baseURL:config.BASE_URL,
     headers:{
@@ -23,7 +22,6 @@ api.interceptors.response.use((response)=>{
     return response.data
 
 },(error)=>{
-    toast.error(error.response.data.message)
     return Promise.reject(error)
 })
 
