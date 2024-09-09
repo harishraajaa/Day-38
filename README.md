@@ -6,7 +6,7 @@ Backend Deployed URL : https://harishurls.onrender.com
 
 Frontend Deployed URL : https://harishurls.netlify.app
 
-TaskQ: Create a Password Reset Page
+TaskQ: URL Shortener Application
 
 This application allows the user to perform the below functionalities,
 
