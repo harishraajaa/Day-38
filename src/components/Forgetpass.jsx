@@ -44,7 +44,7 @@ function Login() {
   return (
     <div className='login-wrapper'>
 
-      <h3 className='text-align-center'>Welcome to the world of Harish Foods!</h3>
+      <h3 className='text-align-center'>Welcome to Harish URL Shortener Application!!</h3>
 
       <p className='text-align-center'>Already an user? Login <Link to='/login'>Here</Link></p>
 
