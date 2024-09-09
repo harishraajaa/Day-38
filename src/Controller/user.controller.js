@@ -27,7 +27,7 @@ const sendEmail=async(user,token,hostname)=>{
           })
       
            await transporter.sendMail({
-            from: '"Harish Foods" <Notifications@harishfoods.com>', // sender address
+            from: '"Harish URL Shortner" <Notifications@harishfoods.com>', // sender address
             to: `${user.email}`, // list of receivers
             subject: "Password Reset Link", // Subject line
             text: "Hello world?", // plain text body
@@ -328,7 +328,7 @@ const resetPassword=async(request,response)=>{
         //let token = request.headers.authorization.split(' ')[1]
         let {id}=request.params
         let payload = auth.decodeToken(id)
-        console.log(payload)
+        //console.log(payload)
         if(payload)
             {
                 if(payload.exp > Math.floor(+new Date()/1000))
