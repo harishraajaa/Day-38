@@ -13,17 +13,22 @@ function SignUp() {
 
   const handleSignUp = async(e)=>{
     
-    e.preventDefault()
-    const formData = new FormData(e.currentTarget)
-    const data = {}
-    for (let [key, value] of formData.entries())
-      data[key] = value
-    
-    let response = await api.post(ApiRoutes.SIGNUP.path,data,{authenticate:ApiRoutes.SIGNUP.authenticate})
+    try {
+      e.preventDefault()
+      const formData = new FormData(e.currentTarget)
+      const data = {}
+      for (let [key, value] of formData.entries())
+        data[key] = value
+      
+      let response = await api.post(ApiRoutes.SIGNUP.path,data,{authenticate:ApiRoutes.SIGNUP.authenticate})
+  
+      toast.success(response.message)
+  
+      navigate('/login')
+    } catch (error) {
+      toast.error(error.message)
+    }
 
-    toast.success(response.message)
-
-    navigate('/login')
   }
 
   return (
