@@ -13,7 +13,8 @@ function SignUp() {
 
   const handleSignUp = async(e)=>{
     
-    e.preventDefault()
+    try {
+      e.preventDefault()
     const formData = new FormData(e.currentTarget)
     const data = {}
     for (let [key, value] of formData.entries())
@@ -24,6 +25,10 @@ function SignUp() {
     toast.success(response.message)
 
     navigate('/login')
+    } catch (error) {
+      toast.success(error.message)
+    }
+    
   }
 
   return (
