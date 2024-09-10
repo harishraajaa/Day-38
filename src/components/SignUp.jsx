@@ -26,7 +26,7 @@ function SignUp() {
 
     navigate('/login')
     } catch (error) {
-      toast.success(error.message)
+      toast.error(error.response.data.message)
     }
     
   }
